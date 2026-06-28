@@ -5,7 +5,6 @@ export const pt: Translation = {
   location: "Brasil",
   nav: {
     about: "Sobre",
-    skills: "Competências",
     experience: "Experiência",
     clients: "Clientes",
     education: "Formação",
@@ -17,7 +16,6 @@ export const pt: Translation = {
   },
   sections: {
     about: "Resumo Profissional",
-    skills: "Competências Técnicas",
     experience: "Experiência Profissional",
     clients: "Clientes e Projetos",
     education: "Formação Acadêmica",
@@ -43,7 +41,7 @@ export const pt: Translation = {
   },
   winoverPeriod: "Out/2025 — Jun/2026",
   winoverRole: "Desenvolvedor Full-Stack Sênior",
-  winoverProjectPrefix: "Cliente:",
+  winoverProjectPrefix: "Projetos:",
   dataAgrin: "Data Agrin",
   winoverActivities: [
     "Desenvolvimento de ERP Agro full-stack Data Agrin com módulos de fiscal, financeiro, colheita, estoque e cadastro de produtores rurais",

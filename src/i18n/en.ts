@@ -3,7 +3,6 @@ export interface Translation {
   location: string;
   nav: {
     about: string;
-    skills: string;
     experience: string;
     clients: string;
     education: string;
@@ -15,7 +14,6 @@ export interface Translation {
   };
   sections: {
     about: string;
-    skills: string;
     experience: string;
     clients: string;
     education: string;
@@ -71,7 +69,6 @@ export const en: Translation = {
   location: "Brazil",
   nav: {
     about: "About",
-    skills: "Skills",
     experience: "Experience",
     clients: "Clients",
     education: "Education",
@@ -83,7 +80,6 @@ export const en: Translation = {
   },
   sections: {
     about: "Professional Summary",
-    skills: "Technical Skills",
     experience: "Professional Experience",
     clients: "Clients & Projects",
     education: "Education",
@@ -108,7 +104,7 @@ export const en: Translation = {
   },
   winoverPeriod: "Oct/2025 — Jun/2026",
   winoverRole: "Senior Full-Stack Developer",
-  winoverProjectPrefix: "Client:",
+  winoverProjectPrefix: "Projects:",
   dataAgrin: "Data Agrin",
   winoverActivities: [
     "Full-stack development of the Data Agrin Agro ERP with fiscal, financial, harvest, inventory, and rural producer registration modules",

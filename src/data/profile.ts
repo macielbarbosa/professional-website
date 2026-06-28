@@ -21,17 +21,6 @@ export const profile = {
   phoneDisplay: "+55 (84) 98125-3837",
   github: "https://github.com/macielbarbosa",
   linkedin: "https://linkedin.com/in/macielbarbosa",
-  skills: [
-    { name: "JavaScript", years: 10 },
-    { name: "Node.js", years: 9 },
-    { name: "React", years: 8 },
-    { name: "REST API", years: 8 },
-    { name: "Scrum", years: 8 },
-    { name: "HTML & CSS", years: 10 },
-    { name: "TypeScript", years: 5 },
-    { name: "Jest", years: 3 },
-    { name: "Cypress", years: 2 },
-  ],
   jobs: [
     {
       id: "winover",

@@ -19,11 +19,6 @@ export function Footer() {
               </a>
             </li>
             <li>
-              <a href="#skills" className="transition-colors hover:text-white">
-                {t.nav.skills}
-              </a>
-            </li>
-            <li>
               <a href="#experience" className="transition-colors hover:text-white">
                 {t.nav.experience}
               </a>
