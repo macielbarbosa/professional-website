@@ -5,6 +5,7 @@ export interface Translation {
     about: string;
     skills: string;
     experience: string;
+    clients: string;
     education: string;
     contact: string;
   };
@@ -16,6 +17,7 @@ export interface Translation {
     about: string;
     skills: string;
     experience: string;
+    clients: string;
     education: string;
     contact: string;
   };
@@ -37,22 +39,30 @@ export interface Translation {
   };
   winoverPeriod: string;
   winoverRole: string;
-  winoverProject: string;
-  winoverActivities: string;
+  winoverProjectPrefix: string;
+  dataAgrin: string;
+  winoverActivities: string[];
   imdPeriod: string;
   imdRole: string;
-  imdProject: string;
-  imdActivities: string;
+  imdProjectPrefix: string;
+  multiprova3: string;
+  smartSuite: string;
+  imdActivities: string[];
   squadraPeriod: string;
   squadraRole: string;
-  squadraProject: string;
-  squadraActivities: string;
+  squadraProjectPrefix: string;
+  smDireto: string;
+  pasi: string;
+  danone: string;
+  mrs: string;
+  squadraActivities: string[];
   sinfoPeriod: string;
   sinfoRole: string;
   sinfoActivities: string;
   ectPeriod: string;
   ectRole: string;
-  ectProject: string;
+  ectProjectPrefix: string;
+  aulaInterativa: string;
   ectActivities: string;
 }
 
@@ -63,6 +73,7 @@ export const en: Translation = {
     about: "About",
     skills: "Skills",
     experience: "Experience",
+    clients: "Clients",
     education: "Education",
     contact: "Contact",
   },
@@ -74,6 +85,7 @@ export const en: Translation = {
     about: "Professional Summary",
     skills: "Technical Skills",
     experience: "Professional Experience",
+    clients: "Clients & Projects",
     education: "Education",
     contact: "Get in Touch",
   },
@@ -96,26 +108,44 @@ export const en: Translation = {
   },
   winoverPeriod: "Oct/2025 — Jun/2026",
   winoverRole: "Senior Full-Stack Developer",
-  winoverProject: "Client: Data Agrin",
-  winoverActivities:
-    "Development of an Agro ERP with integrated artificial intelligence.",
+  winoverProjectPrefix: "Client:",
+  dataAgrin: "Data Agrin",
+  winoverActivities: [
+    "Full-stack development of the Data Agrin Agro ERP with fiscal, financial, harvest, inventory, and rural producer registration modules",
+    "Integration of artificial intelligence into the system's business flow",
+    "Relational database architecture with PostgreSQL and TypeORM, including migrations, enums, and fiscal fields (NCM, CEST, NF-e)",
+    "UI implementation with React, Next.js, Radix UI, and Tailwind CSS, focused on accessibility and responsiveness",
+  ],
   imdPeriod: "May/2018 — Present",
   imdRole: "Mid-Level Full-Stack and Front-end Developer",
-  imdProject: "Projects: Multiprova3, Smart Suite",
-  imdActivities:
-    "Development of an integrated platform for creating, managing, and delivering virtual and in-person exams; development of a B2B product and sales management platform.",
+  imdProjectPrefix: "Projects:",
+  multiprova3: "Multiprova3",
+  smartSuite: "Smart Suite",
+  imdActivities: [
+    "Development and maintenance of the Multiprova3 platform — integrated system for creating, managing, and delivering virtual and in-person exams at scale",
+    "Work on B2B platform (Smart Suite) for product and sales management",
+    "Evolution of microservices-based architecture with RabbitMQ and Docker",
+    "E2E testing with Cypress and unit tests with Jest; code quality monitored via SonarQube",
+  ],
   squadraPeriod: "May/2022 — Oct/2023",
   squadraRole: "Mid-Level Frontend Developer",
-  squadraProject: "Clients: SM Direto, PASI, Danone, MRS",
-  squadraActivities:
-    "Development and maintenance of projects for external clients.",
+  squadraProjectPrefix: "Clients:",
+  smDireto: "SM Direto",
+  pasi: "PASI",
+  danone: "Danone",
+  mrs: "MRS",
+  squadraActivities: [
+    "Development and maintenance of frontend projects for clients such as Danone, MRS, PASI, and SM Direto",
+    "Work in multidisciplinary squads with continuous delivery in an agile environment",
+  ],
   sinfoPeriod: "Oct/2017 — Jun/2018",
   sinfoRole: "Frontend Intern",
   sinfoActivities:
     "Development and maintenance of web systems for the Federal University of Rio Grande do Norte.",
   ectPeriod: "Apr/2017 — Dec/2017",
   ectRole: "Web Development Scholar",
-  ectProject: "Project: Aula Interativa",
+  ectProjectPrefix: "Project:",
+  aulaInterativa: "Aula Interativa",
   ectActivities:
     "Development of the Aula Interativa teaching platform for the School of Science and Technology at UFRN.",
 };

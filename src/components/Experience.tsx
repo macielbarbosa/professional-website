@@ -1,5 +1,56 @@
 import { profile } from "../data/profile";
+import type { ProjectPrefixKey } from "../data/profile";
 import { useLanguage } from "../i18n/LanguageContext";
+import type { Translation } from "../i18n/en";
+
+function ProjectItems({
+  prefixKey,
+  items,
+  t,
+}: {
+  prefixKey: ProjectPrefixKey;
+  items: NonNullable<(typeof profile.jobs)[number]["projectItems"]>;
+  t: Translation;
+}) {
+  return (
+    <p className="mt-1 text-sm text-muted">
+      <span className="font-semibold text-ink">{t[prefixKey]} </span>
+      {items.map((item, index) => (
+        <span key={item.labelKey}>
+          {index > 0 && ", "}
+          {"url" in item && item.url ? (
+            <a
+              href={item.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-accent hover:underline"
+            >
+              {t[item.labelKey]}
+            </a>
+          ) : (
+            t[item.labelKey]
+          )}
+        </span>
+      ))}
+    </p>
+  );
+}
+
+function Activities({ activities }: { activities: string | string[] }) {
+  if (Array.isArray(activities)) {
+    return (
+      <ul className="mt-2 list-disc space-y-1 pl-4 text-sm leading-relaxed text-muted">
+        {activities.map((item) => (
+          <li key={item}>{item}</li>
+        ))}
+      </ul>
+    );
+  }
+
+  return (
+    <p className="mt-2 text-sm leading-relaxed text-muted">{activities}</p>
+  );
+}
 
 export function Experience() {
   const { t } = useLanguage();
@@ -22,14 +73,14 @@ export function Experience() {
                 <p className="mt-0.5 text-sm font-medium text-accent">
                   {t[job.roleKey]}
                 </p>
-                {job.projectKey && (
-                  <p className="mt-1 text-sm text-muted">
-                    {t[job.projectKey]}
-                  </p>
+                {job.projectPrefixKey && job.projectItems && (
+                  <ProjectItems
+                    prefixKey={job.projectPrefixKey}
+                    items={job.projectItems}
+                    t={t}
+                  />
                 )}
-                <p className="mt-2 text-sm leading-relaxed text-muted">
-                  {t[job.activitiesKey]}
-                </p>
+                <Activities activities={t[job.activitiesKey]} />
                 <ul className="mt-3 flex flex-wrap gap-1.5">
                   {job.tech.map((tech) => (
                     <li
