@@ -1,14 +1,9 @@
 import { profile } from "../data/profile";
 import { useLanguage } from "../i18n/LanguageContext";
-import bannerImg from "../../assets/banner.png";
-import profileImg from "../../assets/personal-picture.png";
-import curriculumPdf from "../../assets/curriculum.pdf";
-import {
-  DownloadIcon,
-  GitHubIcon,
-  LinkedInIcon,
-  MapPinIcon,
-} from "./Icons";
+import bannerImg from "../assets/banner.png";
+import profileImg from "../assets/personal-picture.png";
+import curriculumPdf from "../assets/curriculum.pdf";
+import { DownloadIcon, GitHubIcon, LinkedInIcon, MapPinIcon } from "./Icons";
 
 export function Hero() {
   const { t } = useLanguage();

@@ -1,6 +1,6 @@
 import { profile } from "../data/profile";
 import { useLanguage } from "../i18n/LanguageContext";
-import curriculumPdf from "../../assets/curriculum.pdf";
+import curriculumPdf from "../assets/curriculum.pdf";
 import {
   DownloadIcon,
   GitHubIcon,

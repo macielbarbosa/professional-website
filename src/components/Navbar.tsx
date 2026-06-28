@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { profile } from "../data/profile";
 import { useLanguage, type Language } from "../i18n/LanguageContext";
-import curriculumPdf from "../../assets/curriculum.pdf";
+import curriculumPdf from "../assets/curriculum.pdf";
 import {
   CloseIcon,
   DownloadIcon,

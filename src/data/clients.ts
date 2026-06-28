@@ -1,11 +1,11 @@
-import multiprovaLogo from "../../assets/logos/multiprova.svg";
-import dataAgrinLogo from "../../assets/logos/data-agrin.svg";
-import danoneLogo from "../../assets/logos/danone.webp";
-import mrsLogo from "../../assets/logos/mrs.png";
-import pasiLogo from "../../assets/logos/pasi.png";
-import smDiretoLogo from "../../assets/logos/sm-direto.png";
-import aulaInterativaLogo from "../../assets/logos/aula-interativa.png";
-import smartSuiteLogo from "../../assets/logos/smart-suite.png";
+import multiprovaLogo from "../assets/logos/multiprova.svg";
+import dataAgrinLogo from "../assets/logos/data-agrin.svg";
+import danoneLogo from "../assets/logos/danone.webp";
+import mrsLogo from "../assets/logos/mrs.png";
+import pasiLogo from "../assets/logos/pasi.png";
+import smDiretoLogo from "../assets/logos/sm-direto.png";
+import aulaInterativaLogo from "../assets/logos/aula-interativa.png";
+import smartSuiteLogo from "../assets/logos/smart-suite.png";
 
 export const clients = [
   {
