@@ -86,7 +86,7 @@ export const en: Translation = {
     contact: "Contact me",
   },
   summary:
-    "Senior Full-Stack Developer with solid experience in web interfaces, building and maintaining solutions with high quality, performance, usability, and responsiveness. Highly technical and analytical profile, contributing to business rule design, complex problem solving, and collaboration with multidisciplinary teams.",
+    "Senior Full-Stack Developer with solid experience in highly complex web systems, responsible for developing and evolving scalable, high-performance, quality solutions. Highly technical and analytical profile, with strong expertise in implementing business rules, solving complex problems, and collaborating with multidisciplinary teams.",
   years: "years",
   year: "year",
   education: {

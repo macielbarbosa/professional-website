@@ -15,7 +15,7 @@ type ProjectPrefixKey =
   | "ectProjectPrefix";
 
 export const profile = {
-  name: "Maciel Barbosa da Silva",
+  name: "Maciel Barbosa",
   email: "macielbarbosa@outlook.com",
   phone: "+5584981253837",
   phoneDisplay: "+55 (84) 98125-3837",

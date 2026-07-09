@@ -1,12 +1,13 @@
 import { profile } from "../data/profile";
 import { useLanguage } from "../i18n/LanguageContext";
+import { useCurriculumPdf } from "../hooks/useCurriculumPdf";
 import bannerImg from "../assets/banner.png";
 import profileImg from "../assets/personal-picture.png";
-import curriculumPdf from "../assets/curriculum.pdf";
 import { DownloadIcon, GitHubIcon, LinkedInIcon, MapPinIcon } from "./Icons";
 
 export function Hero() {
   const { t } = useLanguage();
+  const { href: curriculumPdf, filename } = useCurriculumPdf();
 
   return (
     <section
@@ -44,7 +45,7 @@ export function Hero() {
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3 md:justify-start">
             <a
               href={curriculumPdf}
-              download="Maciel_Barbosa_CV.pdf"
+              download={filename}
               className="inline-flex items-center gap-2 rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-white shadow transition-colors hover:bg-blue-700"
             >
               <DownloadIcon className="h-4 w-4" />

@@ -1,6 +1,6 @@
 import { profile } from "../data/profile";
 import { useLanguage } from "../i18n/LanguageContext";
-import curriculumPdf from "../assets/curriculum.pdf";
+import { useCurriculumPdf } from "../hooks/useCurriculumPdf";
 import {
   DownloadIcon,
   GitHubIcon,
@@ -11,6 +11,7 @@ import {
 
 export function Contact() {
   const { t } = useLanguage();
+  const { href: curriculumPdf, filename } = useCurriculumPdf();
 
   return (
     <section id="contact" className="scroll-mt-16 bg-white py-16 sm:py-20">
@@ -83,7 +84,7 @@ export function Contact() {
         <div className="mt-8">
           <a
             href={curriculumPdf}
-            download="Maciel_Barbosa_CV.pdf"
+            download={filename}
             className="inline-flex items-center gap-2 rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-blue-700"
           >
             <DownloadIcon className="h-4 w-4" />

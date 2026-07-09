@@ -22,7 +22,7 @@ export const pt: Translation = {
     contact: "Contato",
   },
   summary:
-    "Desenvolvedor Full-Stack Sênior com sólida experiência em interfaces web, criando e mantendo soluções com alta qualidade, desempenho, usabilidade e responsividade. Perfil altamente técnico e analítico, com atuação na construção de regras de negócio, resolução de problemas complexos e colaboração com equipes multidisciplinares.",
+    "Desenvolvedor Full-Stack Sênior com sólida experiência em sistemas web de alta complexidade, responsável pelo desenvolvimento e evolução de soluções escaláveis, de alta performance e qualidade. Perfil altamente técnico e analítico, com forte atuação na implementação de regras de negócio, resolução de problemas complexos e colaboração com equipes multidisciplinares.",
   years: "anos",
   year: "ano",
   education: {

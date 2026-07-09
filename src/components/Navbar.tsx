@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { profile } from "../data/profile";
 import { useLanguage, type Language } from "../i18n/LanguageContext";
-import curriculumPdf from "../assets/curriculum.pdf";
+import { useCurriculumPdf } from "../hooks/useCurriculumPdf";
 import {
   CloseIcon,
   DownloadIcon,
@@ -49,6 +49,7 @@ function LanguageSelector() {
 
 export function Navbar() {
   const { t } = useLanguage();
+  const { href: curriculumPdf, filename } = useCurriculumPdf();
   const [open, setOpen] = useState(false);
 
   const closeMenu = () => setOpen(false);
@@ -84,7 +85,7 @@ export function Navbar() {
         <div className="hidden items-center gap-3 md:flex">
           <a
             href={curriculumPdf}
-            download="Maciel_Barbosa_CV.pdf"
+            download={filename}
             className="inline-flex items-center gap-1.5 rounded-lg bg-accent-soft px-3 py-1.5 text-xs font-semibold text-accent transition-colors hover:bg-accent hover:text-white"
           >
             <DownloadIcon className="h-3.5 w-3.5" />
@@ -146,7 +147,7 @@ export function Navbar() {
             <li className="flex items-center gap-4 pt-2">
               <a
                 href={curriculumPdf}
-                download="Maciel_Barbosa_CV.pdf"
+                download={filename}
                 className="inline-flex items-center gap-1.5 text-sm font-semibold text-accent"
                 onClick={closeMenu}
               >
