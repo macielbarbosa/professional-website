@@ -2,7 +2,7 @@ import type { Translation } from "./en";
 
 export const pt: Translation = {
   title: "Desenvolvedor Full-Stack Sênior",
-  location: "Brasil",
+  location: "São Paulo - SP, Brasil",
   nav: {
     about: "Sobre",
     experience: "Experiência",

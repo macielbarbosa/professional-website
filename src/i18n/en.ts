@@ -66,7 +66,7 @@ export interface Translation {
 
 export const en: Translation = {
   title: "Senior Full-Stack Developer",
-  location: "Brazil",
+  location: "São Paulo - SP, Brazil",
   nav: {
     about: "About",
     experience: "Experience",
